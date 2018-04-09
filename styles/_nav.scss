@@ -1,0 +1,16 @@
+.navbar {
+	ul {
+		li {
+			display: inline-block;
+			&:after {
+				content: " | ";
+			}
+			&.active, &:active {
+				color: red;
+			}
+			&:hover {
+				color: red;
+			}
+		}
+	}
+}
