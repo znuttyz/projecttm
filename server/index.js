@@ -11,17 +11,8 @@ app.prepare()
   .then(() => {
     const server = express()
 
-    server.get('/', (req, res) => {
-      return app.render(req, res, '/b', req.query)
-    })
-
-    server.get('/b', (req, res) => {
-      // return app.render(req, res, '/a', req.query)
+    server.get('/test', (req, res) => {
       res.send(200)
-    })
-
-    server.get('/posts/:id', (req, res) => {
-      return app.render(req, res, '/posts', { id: req.params.id })
     })
 
     server.get('*', (req, res) => {
