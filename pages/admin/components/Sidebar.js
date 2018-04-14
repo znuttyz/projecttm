@@ -1,5 +1,5 @@
 const Sidebar = () => (
-	<div className="example">Side bar!</div>
+	<div>Side bar!</div>
 )
 
 export { Sidebar }
