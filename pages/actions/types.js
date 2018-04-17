@@ -1,0 +1,1 @@
+export const BANNER_FETCH = "banner_fetch"
