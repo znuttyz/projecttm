@@ -25,14 +25,15 @@ app.prepare()
       socketPath: process.env.DB_SOCKETPATH
     });
 
-    // server.post('/test', (res, req) => {
-    //   con.query("SELECT * FROM tbl_banner", (err, rows) => {
-    //     if(err) throw err;
-    //     console.log('Data received from Db(tbl_banner):\n');
-    //     console.log(rows)
+    server.post('/getBanner', (req, res) => {
+      con.query("SELECT * FROM tbl_banner", (err, rows) => {
+        if(err) throw err;
+        console.log('Data received from Db(tbl_banner):\n');
+        console.log(rows)
 
-    //   });
-    // })
+        res.send(rows)
+      });
+    })
 
     server.get('*', (req, res) => {
       return handle(req, res)

@@ -6,6 +6,8 @@ import {
 
 export const bannerFetch = () => {
 	return(dispatch) => {
-		dispatch({ type: BANNER_FETCH, payload: ["banner1", "banner2"] })
+		axios.post('/getBanner')
+		.then((response) => dispatch({ type: BANNER_FETCH, payload: response.data }))
+		.catch((response) => console.log('Unable to fetch Banner.', response));
 	}
 }

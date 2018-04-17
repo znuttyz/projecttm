@@ -9,7 +9,6 @@ const INITIAL_STATE = {
 export default (state = INITIAL_STATE, action) => {
 	switch (action.type) {
 		case BANNER_FETCH:
-			console.log("banner reducer")
 			return { ...state, banners: action.payload }
 
 		default:

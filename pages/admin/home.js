@@ -23,7 +23,11 @@ class Home extends Component {
 			      Hi <strong>{this.props.loggedUser.email}</strong>. This is a super secure page! Try loading this page again using the incognito/private mode of your browser.
 			    </div>
 
-			    <img style={{width: '100%'}} src="/static/image/banner/banner1.jpg" />
+			    {this.props.banners.map(item => {
+			    	return <img key={item.banner_name} style={{width: '100%'}} src={item.banner_scr} alt={item.banner_tag}/>
+			    })
+			    	
+				}
 			</div>
 		)
 	}
@@ -34,7 +38,6 @@ Home.propTypes = {
 }
 
 const mapStateToProps = ({ banner }) => {
-	console.log("banner", banner)
 	return {
 		banners: banner.banners
 	}
