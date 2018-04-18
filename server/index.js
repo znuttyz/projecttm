@@ -1,4 +1,5 @@
 const express = require('express')
+const helmet = require('helmet')
 const next = require('next')
 const mysql = require("mysql")
 const myParser = require("body-parser")
@@ -8,11 +9,14 @@ const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
-require('dotenv').config();
+require('dotenv').config()
+
 
 app.prepare()
   .then(() => {
     const server = express()
+
+    server.use(helmet())
 
     // Json Encode
     server.use(myParser.json());
