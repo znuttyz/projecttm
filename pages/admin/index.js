@@ -11,7 +11,7 @@ class SignIn extends React.Component {
   componentDidMount () {
     show(CONTAINER_ID)
     if(this.props.isAuthenticated) {
-      Router.push('/admin/home')
+      Router.push('/admin/banner')
     }
   }
   render () {

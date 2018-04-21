@@ -1,4 +1,10 @@
-const Sidebar = () => (
+const menu = (active) => {
+	return ["Banners", "News", "Promotions"].map(item => 
+		<li key={item}><a className={active === item ? 'active' : ''}>{item}</a></li>
+		)
+}
+
+const Sidebar = ({ active }) => (
 	<div>
 		<div className="sidebarLogoAdmin">
 			<a>TUMMOUR</a>
@@ -6,10 +12,7 @@ const Sidebar = () => (
 
 		<div className="sidebarWrapperAdmin">
 			<ul>
-				<li><a className="active">Dashboard</a></li>
-				<li><a>Banner</a></li>
-				<li><a>News</a></li>
-				<li><a>Promotion</a></li>
+				{ menu(active) }
 			</ul>
 		</div>
 

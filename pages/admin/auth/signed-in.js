@@ -16,7 +16,7 @@ export default class SignedIn extends React.Component {
       console.error('Something happened with the Sign In request')
     }
     setToken(token)
-    Router.push('/admin/home')
+    Router.push('/admin/banner')
   }
 
   render () {

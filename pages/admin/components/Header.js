@@ -1,8 +1,8 @@
-const Header = ({ title }) => (
+const Header = ({ title, user }) => (
 	<div className="headerContainerAdmin">
 		<div className="headerTitleAdmin"><a>{title}</a></div>
 		<ul>
-			<li><a>Option</a></li>
+			<li>{user}</li>
 			<li><a>Logout</a></li>
 		</ul>
 	</div>

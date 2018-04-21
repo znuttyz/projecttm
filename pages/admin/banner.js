@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import securePage from '../../hocs/securePage'
 import PropTypes from 'prop-types'
-import { Sidebar, Header } from './components'
+import { Sidebar, Header, Card } from './components'
 
 // import withRedux from 'next-redux-wrapper'
 // import { initStore, bannerFetch } from '../actions'
@@ -9,7 +9,7 @@ import { Sidebar, Header } from './components'
 
 import '../../styles/index.scss'
 
-class Home extends Component {
+class Banner extends Component {
 	componentWillMount() {
 		// this.props.bannerFetch();
 	}
@@ -19,15 +19,19 @@ class Home extends Component {
 			<div className="wrapperAdmin">
 
 				<div className="sidebarAdmin">
-					<Sidebar />
+					<Sidebar active="Banners" />
 				</div>
 
 				<div className="contentAdmin">
-					<Header title="Dashboard" />
+					<Header title="Banners" user={this.props.loggedUser.email} />
 
-					<div>
-				      Hi <strong>{this.props.loggedUser.email}</strong>. This is a super secure page! Try loading this page again using the incognito/private mode of your browser.
-				    </div>
+					<div className="bannerAdmin">
+						<div className="row">
+							<Card>
+							
+							</Card>
+						</div>
+					</div>
 				</div>
 			    	
 			</div>
@@ -35,7 +39,7 @@ class Home extends Component {
 	}
 }
 
-Home.propTypes = {
+Banner.propTypes = {
   loggedUser: PropTypes.object.isRequired
 }
 
@@ -51,4 +55,4 @@ Home.propTypes = {
 
 
 // export default withRedux(initStore, mapStateToProps, { bannerFetch })(securePage(Home))
-export default securePage(Home)
+export default securePage(Banner)
