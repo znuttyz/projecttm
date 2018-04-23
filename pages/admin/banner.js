@@ -27,8 +27,25 @@ class Banner extends Component {
 
 					<div className="bannerAdmin">
 						<div className="row">
-							<Card>
-							
+							<Card title="Banners" subTitle="Home page banner">
+								
+								<div className="content">
+									<div className="bannerContainer">
+										<div className="bannerImage" >
+											<img src="/static/image/banner/banner1.jpg" width="100%"/>
+										</div>
+										<div className="bannerImage" >
+											<img src="/static/image/banner/banner1.jpg" width="100%"/>
+										</div>
+										<div className="bannerImage" >
+											<img src="/static/image/banner/banner1.jpg" width="100%"/>
+										</div>
+										<div className="bannerImage" >
+											<img src="/static/image/banner/banner1.jpg" width="100%"/>
+										</div>
+									</div>
+								</div>
+
 							</Card>
 						</div>
 					</div>
