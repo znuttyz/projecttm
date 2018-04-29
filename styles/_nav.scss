@@ -1,15 +1,10 @@
-.navbar {
-	ul {
-		li {
-			display: inline-block;
-			&:after {
-				content: " | ";
-			}
-			&.active, &:active {
-				color: red;
-			}
-			&:hover {
-				color: red;
+.header {
+	// background: url(../../static/images/00-global/bg-header.jpg);
+	background: $black;
+	.navbar {
+		ul {
+			li {
+				display: inline-block;
 			}
 		}
 	}
