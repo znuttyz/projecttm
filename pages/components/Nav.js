@@ -2,17 +2,23 @@ const items = ["หน้าแรก", "เกี่ยวกับเรา", 
 
 const Nav = ({ isActive }) => (
 	<div className="header">
-		<div className="logo">
-			<img src="static/images/00-global/tummour.png" />
+		<div className="container">
+			<div className="logo">
+				<img src="static/images/00-global/tummour.png" />
+			</div>
 		</div>
-		<div className="navbar">
-			<ul>
-				<li><a href=""><img src="static/images/00-nav/01.png" /></a></li>
-				<li><a href=""><img src="static/images/00-nav/02.png" /></a></li>
-				<li><a href=""><img src="static/images/00-nav/03.png" /></a></li>
-				<li><a href=""><img src="static/images/00-nav/04.png" /></a></li>
-				<li><a href=""><img src="static/images/00-nav/05.png" /></a></li>
-			</ul>
+		<div className="bg-navbar">
+			<div className="container">
+				<div className="navbar">
+					<ul>
+						<li><a href=""><img src="static/images/00-nav/01.png" /></a></li>
+						<li><a href=""><img src="static/images/00-nav/02.png" /></a></li>
+						<li><a href=""><img src="static/images/00-nav/03.png" /></a></li>
+						<li><a href=""><img src="static/images/00-nav/04.png" /></a></li>
+						<li><a href=""><img src="static/images/00-nav/05.png" /></a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 )
