@@ -1,11 +1,11 @@
 .header {
-	// background: url(../../static/images/00-global/bg-header.jpg);
-	background: $black;
+	.logo {
+		display: inline-block;
+		width: 49%;
+		vertical-align: top;
+	}
 	.navbar {
-		ul {
-			li {
-				display: inline-block;
-			}
-		}
+		display: inline-block;
+		width: 49%;
 	}
 }

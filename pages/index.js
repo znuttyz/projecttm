@@ -7,10 +7,11 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<div className="example">
-					This is Home!!!
+				<div className="header-bg">
+					<div className="container">
+						<Nav isActive="หน้าแรก"/>
+					</div>
 				</div>
-				<Nav isActive="หน้าแรก"/>
 			</div>
 		)
 	}
