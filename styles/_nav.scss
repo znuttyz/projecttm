@@ -1,7 +1,7 @@
 .header {
 	background: url("/static/images/00-global/bg-header.jpg");
 	.logo {
-		width: 35%;
+		width: 40%;
 		position: relative;
 		z-index: 100;
 		img {
@@ -12,16 +12,15 @@
 		background: url('/static/images/00-global/bg-header.jpg');
 		background-size: cover;
 		position: relative;
-		top: -238px;
-		padding: 14px 0;
+		top: -235px;
+		padding: 18px 0 26px;
 		.navbar {
-			width: 64%;
-			margin-left: 472px;
+			margin-left: 396px;
 			ul {
 				li {
 					display: inline-block;
 					width: 15%;
-					padding: 0 18px;
+					padding: 0 15px;
 					cursor: pointer;
 					&:nth-child(1) {
 						&:hover, &:active {

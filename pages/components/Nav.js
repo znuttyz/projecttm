@@ -4,7 +4,7 @@ const Nav = ({ isActive }) => (
 	<div className="header">
 		<div className="container">
 			<div className="logo">
-				<img src="static/images/00-global/tummour.png" />
+				<a href=""><img src="static/images/00-global/tummour.png" /></a>
 			</div>
 		</div>
 		<div className="bg-navbar">

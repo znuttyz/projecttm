@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Nav, Banner } from './components'
+import { Nav, Banner, Ourbrands } from './components'
 
 import '../styles/index.scss'
 
@@ -9,6 +9,7 @@ class Home extends Component {
 			<div>
 				<Nav isActive="หน้าแรก"/>
 				<Banner />
+				<Ourbrands />
 			</div>
 		)
 	}
